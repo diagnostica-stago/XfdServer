@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Projects>
+  <Project name="Master">
+    <BuildConfigurations>
+      <BuildConfiguration name="Master 100-BuildTools" criticity="high" />
+      <BuildConfiguration name="Master 150-FrameworkBuildName" criticity="high" />
+      <BuildConfiguration name="Master 151-FrameworkBuildName.Tst" criticity="high" />
+      <BuildConfiguration name="Master 400-Project1BuildName" showTestCount="true" criticity="high" />
+      <BuildConfiguration name="Master 401-Project1BuildName.Tst" showTestCount="true" criticity="low" />
+      <BuildConfiguration name="Master 900-BuildAnalysis" criticity="low" />
+      <BuildConfiguration name="Master 811" criticity="high" />
+    </BuildConfigurations>
+  </Project>
+  <Config>
+    <IterationConfig name="DisplayOption"  value="MASTER"/>
+    <IterationConfig name="Start Construction"  value="05/11/2016"/>
+    <IterationConfig name="End Construction"  value="28/11/2016"/>
+    <IterationConfig name="Construction Number"  value="29"/>
+  </Config>
+</Projects>
+
+

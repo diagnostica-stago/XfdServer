@@ -1,0 +1,23 @@
+# Generic ignore regex
+*.arc
+*.cache
+*.Cache
+*.config.WithVersion.config
+*.cpperr
+*.csproj.bak
+*.dotCover
+*.dirstamp
+*.generated.bin.csproj
+*.Generated.cpp
+*.Generated.csv
+*.Generated.h
+*.log
+*.suo
+*.user
+**/bin/
+**/obj/
+**/out/
+**/Out/
+**/packages/*
+# Exceptions
+!**/packages/*.config

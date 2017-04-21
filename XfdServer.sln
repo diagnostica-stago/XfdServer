@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XfdServer", "XfdServer\XfdServer.csproj", "{F88170CF-FB13-4A0E-9F06-344DC2199EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xfd.Gui", "Xfd.Gui\Xfd.Gui.csproj", "{B69349C8-43BF-4E23-844D-75A16B45F08F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F88170CF-FB13-4A0E-9F06-344DC2199EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88170CF-FB13-4A0E-9F06-344DC2199EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88170CF-FB13-4A0E-9F06-344DC2199EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88170CF-FB13-4A0E-9F06-344DC2199EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B69349C8-43BF-4E23-844D-75A16B45F08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69349C8-43BF-4E23-844D-75A16B45F08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69349C8-43BF-4E23-844D-75A16B45F08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69349C8-43BF-4E23-844D-75A16B45F08F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
