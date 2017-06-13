@@ -46,7 +46,7 @@ namespace XfdServer
         public bool IsCritical { get; }
         public bool IsFailed { get; }
         public int? FailedTestCount { get; }
-        public int? PassedTestCount { get; private set; }
+        public int? PassedTestCount { get; }
         public bool ShowTestCount { get; }
 
         public string BuildId => Name.Split('-')[0].Split(' ')[1];

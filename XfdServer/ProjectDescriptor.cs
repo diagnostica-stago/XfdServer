@@ -39,15 +39,9 @@ namespace XfdServer
 
         public BuildState? PreviousGlobalState { get; private set; }
 
-        public int? FailedTestCount
-        {
-            get { return _builds.Where(b => b.ShowTestCount).Sum(b => b.FailedTestCount); }
-        }
+        public int? FailedTestCount => _builds.Where(b => b.ShowTestCount).Sum(b => b.FailedTestCount);
 
-        public int? PassedTestCount
-        {
-            get { return _builds.Where(b => b.ShowTestCount).Sum(b => b.PassedTestCount); }
-        }
+        public int? PassedTestCount => _builds.Where(b => b.ShowTestCount).Sum(b => b.PassedTestCount);
 
         public void UpdateFromTeamCity()
         {
@@ -111,17 +105,11 @@ namespace XfdServer
                 {
                     case BuildState.OK:
                         break;
-                    case BuildState.WARNING:
-                        if (PreviousGlobalState.Value < BuildState.WARNING)
-                        {
-                            beepEffect = TextLine.BeepEffect.Beep1_0;
-                        }
+                    case BuildState.WARNING when PreviousGlobalState.Value < BuildState.WARNING:
+                        beepEffect = TextLine.BeepEffect.Beep1_0;
                         break;
-                    case BuildState.ERROR:
-                        if (PreviousGlobalState.Value < BuildState.ERROR)
-                        {
-                            beepEffect = TextLine.BeepEffect.Beep2_0;
-                        }
+                    case BuildState.ERROR when PreviousGlobalState.Value < BuildState.ERROR:
+                        beepEffect = TextLine.BeepEffect.Beep2_0;
                         break;
                 }
             }
